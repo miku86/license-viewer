@@ -6,6 +6,7 @@ class LicenseSelection extends Component {
     licenses: [],
     selectedLicense: '',
     selectedLicenseDetails: {},
+    loading: false,
   };
 
   fetchData = async (event) => {
@@ -17,21 +18,31 @@ class LicenseSelection extends Component {
   };
 
   componentDidMount = async () => {
+    this.setState({
+      loading: true,
+    });
+
     const response = await this.fetchData();
     const { licenses } = await response.json();
+
     this.setState({
       licenses: this.state.licenses.concat(licenses),
+      loading: false,
     });
   };
 
   handleChange = async (event) => {
     this.setState({
       selectedLicense: event.target.value,
+      loading: true,
     });
+
     const response = await this.fetchData(event);
     const selectedLicenseDetails = await response.json();
+
     this.setState({
       selectedLicenseDetails,
+      loading: false,
     });
   };
 
@@ -47,7 +58,11 @@ class LicenseSelection extends Component {
             );
           })}
         </select>
-        <LicenseDetails license={this.state.selectedLicenseDetails} />
+        {this.state.loading ? (
+          <h4 className="loading">Loading...</h4>
+        ) : (
+          <LicenseDetails license={this.state.selectedLicenseDetails} />
+        )}
       </React.Fragment>
     );
   }
