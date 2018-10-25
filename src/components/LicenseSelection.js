@@ -17,7 +17,7 @@ class LicenseSelection extends Component {
 
   render() {
     return (
-      <select>
+      <select className="select">
         {this.state.licenses.map((license) => {
           return (
             <option key={license.id} value={license.id}>
