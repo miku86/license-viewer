@@ -8,10 +8,16 @@ class LicenseSelection extends Component {
     selectedLicenseDetails: {},
   };
 
-  componentDidMount = async () => {
+  fetchData = async (event) => {
     const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
-    const API_URL = 'https://licenseapi.herokuapp.com/licenses';
-    const response = await fetch(CORS_PROXY + API_URL);
+    const API_URL = `https://licenseapi.herokuapp.com/licenses/${
+      event ? event.target.value : ''
+    }`;
+    return await fetch(CORS_PROXY + API_URL);
+  };
+
+  componentDidMount = async () => {
+    const response = await this.fetchData();
     const { licenses } = await response.json();
     this.setState({
       licenses: this.state.licenses.concat(licenses),
@@ -22,11 +28,7 @@ class LicenseSelection extends Component {
     this.setState({
       selectedLicense: event.target.value,
     });
-    const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
-    const API_URL = `https://licenseapi.herokuapp.com/licenses/${
-      event.target.value
-    }`;
-    const response = await fetch(CORS_PROXY + API_URL);
+    const response = await this.fetchData(event);
     const selectedLicenseDetails = await response.json();
     this.setState({
       selectedLicenseDetails,
