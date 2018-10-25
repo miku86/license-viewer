@@ -3,11 +3,11 @@
 }
 
 .App {
-  background: linear-gradient(135deg, hsl(60, 60%, 50%) 0%, #fceabb 100%);
+  background-color: rgb(236, 236, 236);
   height: 100vh;
   display: flex;
   flex-direction: column;
-  color: var(--text-color);
+  color: #282c34;
 }
 
 /* HEADER */
@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
+  color: var(--text-color);
 }
 
 .header__logo {
@@ -40,9 +41,33 @@
 }
 
 .result {
-  width: 50%;
-  color: black;
+  width: 70%;
+}
+
+.result__title {
+  font-size: 2rem;
   text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  margin-bottom: -1px;
+}
+
+.result__details {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(203, 203, 203);
+  list-style-type: none;
+}
+
+.loading {
+  font-size: 1.5rem;
+}
+
+.select-license {
+  text-align: center;
+  border-top-color: white;
 }
 
 /* FOOTER */
@@ -52,6 +77,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--text-color);
 }
 
 @keyframes App-logo-spin {
