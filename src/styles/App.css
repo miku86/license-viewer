@@ -44,7 +44,7 @@
 }
 
 .result {
-  width: 70%;
+  width: 80%;
 }
 
 .result__title {
@@ -58,11 +58,35 @@
   margin-bottom: -1px;
 }
 
+.result__desc {
+  line-height: 1.8
+}
+
 .result__details {
-  padding: 20px;
+  padding: 30px 10%;
   background-color: white;
   border: 1px solid var(--border-grey);
   list-style-type: none;
+}
+
+.result__details__boxes {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result__box {
+  border: 1px solid var(--border-grey);
+  border-radius: 4px;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.result__box__title {
+  height: 20%;
+  text-align: center;
 }
 
 .loading {

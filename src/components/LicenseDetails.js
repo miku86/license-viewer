@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LicenseDetailsBox from './LicenseDetailsBox';
 
 class LicenseDetails extends Component {
   render() {
@@ -8,24 +9,11 @@ class LicenseDetails extends Component {
         <h1 className="result__title">{license.title}</h1>
         <div className="result__details">
           <div className="result__desc">{license.description}</div>
-          <ul className="result__permissions">
-            <h4>Permissions</h4>
-            {license.permissions.map((perm) => (
-              <li>{perm}</li>
-            ))}
-          </ul>
-          <ul className="result__conditions">
-            <h4>Conditions</h4>
-            {license.conditions.map((cond) => (
-              <li>{cond}</li>
-            ))}
-          </ul>
-          <ul className="result__limitations">
-            <h4>Limitations</h4>
-            {license.limitations.map((limit) => (
-              <li>{limit}</li>
-            ))}
-          </ul>
+          <div className="result__details__boxes">
+            <LicenseDetailsBox name="permissions" data={license.permissions} />
+            <LicenseDetailsBox name="conditions" data={license.conditions} />
+            <LicenseDetailsBox name="limitations" data={license.limitations} />
+          </div>
         </div>
       </div>
     ) : (
