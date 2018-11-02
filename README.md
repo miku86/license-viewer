@@ -11,7 +11,7 @@
 - [x] choose a specific software license
 - [x] see the details about this license
   - [x] title
-  - [ ] description
+  - [x] description
   - [ ] permissions
   - [ ] conditions
   - [ ] limitations
@@ -21,7 +21,12 @@
 - [x] create dropdown with all licenses as an option
   - [x] fetch all data from api
 - [x] on change, show specific details
-  - [ ] fetch data of specific license
+  - [x] fetch data of specific license
+- [ ] add box for permissions
+- [ ] add box for conditions
+- [ ] add box for limitations
+- [ ] add box for spoiler-able fulltext
+- [ ] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)
 
 ## Mock
 
