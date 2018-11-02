@@ -12,8 +12,8 @@
 - [x] see the details about this license
   - [x] title
   - [x] description
-  - [ ] permissions
-  - [ ] conditions
+  - [x] permissions
+  - [x] conditions
   - [ ] limitations
 
 ### ToDO
@@ -22,8 +22,8 @@
   - [x] fetch all data from api
 - [x] on change, show specific details
   - [x] fetch data of specific license
-- [ ] add box for permissions
-- [ ] add box for conditions
+- [x] add box for permissions
+- [x] add box for conditions
 - [ ] add box for limitations
 - [ ] add box for spoiler-able fulltext
 - [ ] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)

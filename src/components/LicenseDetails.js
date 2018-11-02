@@ -14,6 +14,12 @@ class LicenseDetails extends Component {
               <li>{perm}</li>
             ))}
           </ul>
+          <ul className="result__conditions">
+            <h4>Conditions</h4>
+            {license.conditions.map((cond) => (
+              <li>{cond}</li>
+            ))}
+          </ul>
         </div>
       </div>
     ) : (
