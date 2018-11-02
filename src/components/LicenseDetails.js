@@ -20,6 +20,12 @@ class LicenseDetails extends Component {
               <li>{cond}</li>
             ))}
           </ul>
+          <ul className="result__limitations">
+            <h4>Limitations</h4>
+            {license.limitations.map((limit) => (
+              <li>{limit}</li>
+            ))}
+          </ul>
         </div>
       </div>
     ) : (

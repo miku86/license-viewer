@@ -14,7 +14,7 @@
   - [x] description
   - [x] permissions
   - [x] conditions
-  - [ ] limitations
+  - [x] limitations
 
 ### ToDO
 
@@ -24,7 +24,7 @@
   - [x] fetch data of specific license
 - [x] add box for permissions
 - [x] add box for conditions
-- [ ] add box for limitations
+- [x] add box for limitations
 - [ ] add box for spoiler-able fulltext
 - [ ] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)
 
