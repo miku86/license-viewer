@@ -25,8 +25,12 @@
 - [x] add box for permissions
 - [x] add box for conditions
 - [x] add box for limitations
+- [ ] description html tags should be executable
+- [ ] remove links from license description
 - [ ] add box for spoiler-able fulltext
 - [ ] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)
+- [ ] get knowledge about the different attributes for permissions etc.
+- [ ] look what happens when text is too big
 
 ## Mock
 
