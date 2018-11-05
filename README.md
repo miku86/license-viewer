@@ -30,8 +30,8 @@
 - [x] add box for spoiler-able fulltext
 - [x] add button to copy full text
 - [x] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)
-- [ ] get knowledge about the different attributes for permissions etc.
-- [ ] look what happens when text is too big
+- [x] look what happens when text is too big
+- [x] get knowledge about the different attributes for permissions etc.
 
 ## Mock
 
