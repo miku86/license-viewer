@@ -50,13 +50,14 @@ class LicenseSelection extends Component {
     return (
       <React.Fragment>
         <select className="select" onChange={this.handleChange}>
-          {this.state.licenses.map((license) => {
-            return (
-              <option key={license.id} value={license.id}>
-                {license.title}
-              </option>
-            );
-          })}
+          <option key="select" value="select">
+            Select a License
+          </option>
+          {this.state.licenses.map((license) => (
+            <option key={license.id} value={license.id}>
+              {license.title}
+            </option>
+          ))}
         </select>
         {this.state.loading ? (
           <h4 className="loading">Loading...</h4>

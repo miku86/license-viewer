@@ -29,7 +29,7 @@
 - [x] remove links from license description
 - [x] add box for spoiler-able fulltext
 - [x] add button to copy full text
-- [ ] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)
+- [x] on first load, "Select a License" as `select => option` instead of "Academic Free License" (first entry)
 - [ ] get knowledge about the different attributes for permissions etc.
 - [ ] look what happens when text is too big
 
